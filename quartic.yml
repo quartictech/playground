@@ -1,1 +1,6 @@
 test: echo "You are a raging noob and just no yes actually"
+runner:
+    type: python
+    path: "."
+    modules:
+     - "test"
