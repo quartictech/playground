@@ -6,5 +6,5 @@ def step1(a_new_test: "new_input") -> "new_output":
     return writer("Something", "Something").json({})
 
 @step
-def step2(test2: "new_output") -> "output2":
+def step2(test2: "new_output") -> "output3":
     return writer("Something else", "something else").json({})
