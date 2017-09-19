@@ -3,7 +3,9 @@ from quartic.incubating import raw, FromBucket
 
 @raw
 def register() -> "employees":
-    return FromBucket("quartic-employees.csv", name="Quartic employees list")
+    return FromBucket("quartic-employees.csv", 
+                      name="Quartic employees list",
+                      desc="Base list of Quartic employees and titles")
 
 @raw
 def register() -> "employees_surname":
