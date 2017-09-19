@@ -1,10 +1,6 @@
 from quartic import step, writer
+from quartic.incubating import raw, FromBucket
 
-
-@step
-def step1(test: "input") -> "output":
-    return writer("Something", "Something").json({})
-
-@step
-def step2(test2: "output") -> "output2":
-    return writer("Something else", "something else").json({})
+@raw
+def register() -> "first_input":
+    return FromBucket("quartic-employees.csv", name="Quartic employees list")
