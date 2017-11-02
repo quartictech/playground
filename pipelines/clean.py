@@ -1,5 +1,4 @@
 from quartic import step, writer
-
 for ds in ['employees', 'employees_surname', 'employees_address']:
     @step
     def clean(in1: ds) -> "clean_{}".format(ds):
